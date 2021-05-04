@@ -120,7 +120,9 @@ if __name__ == '__main__':
         splitCard = discards[0].split(' ', 1)
         currentColour = splitCard[0]
         if currentColour == "Wild":
-            print(f"1. Blue \n2. Yellow \n3. Red \n4. Green")
+            for i in range(len(colours)):
+                print(i+)
+
             newColour =  int(input("Pick colour"))
             while newColour > 4 or newColour < 1:
                 newColour = int(input("Invalid. Pick colour"))
